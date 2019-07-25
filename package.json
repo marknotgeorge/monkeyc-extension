@@ -1,0 +1,25 @@
+{
+    "name": "monkeyc-extension",
+    "displayName": "monkeyc-extension",
+    "description": "A Visual Studio Code extension for the Garmin ConnectIQ SDK",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.36.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "monkeyc",
+            "aliases": ["Monkey C", "monkeyc"],
+            "extensions": [".mc",".jungle"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "monkeyc",
+            "scopeName": "source.monkeyc",
+            "path": "./syntaxes/monkeyc.tmLanguage.json"
+        }]
+    }
+}
